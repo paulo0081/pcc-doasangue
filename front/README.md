@@ -26,4 +26,5 @@ Estas anotações serão feitas a partir da própria documentação do React Nat
 ## Documentações importantes
 
 - [Material UI versão mobile](https://callstack.github.io/react-native-paper/index.html)
-
+- [Navigating Between Screens](https://reactnative.dev/docs/navigation)
+- [React Native](https://reactnative.dev/)
