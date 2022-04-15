@@ -8,9 +8,11 @@
 
 2. Baixe o app **Expo Go** no seu celular
 
-3. Rode o comando **npm start**
+3. Acesse a pasta do aplicatico com seu prompt de comando e rode o comando **npm install**
 
-4. Leia o QR Code no app e veja o aplicativo funcionando no seu celular
+4. Rode o comando **npm start**
+
+5. Leia o QR Code no app e veja o aplicativo funcionando no seu celular
 
 ## Recomendações React Native
 
@@ -20,4 +22,8 @@ Estas anotações serão feitas a partir da própria documentação do React Nat
 - **JSX** é o tipo de arquivo para componentes do React
 - Como criar componentes com informações dinamicas, [clique aqui](https://reactnative.dev/docs/intro-react#state)
 - **.map** para percorrer objetos iteraveis dentro de um componente
+
+## Documentações importantes
+
+- [Material UI versão mobile](https://callstack.github.io/react-native-paper/index.html)
 
