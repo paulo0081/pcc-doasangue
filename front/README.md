@@ -8,11 +8,13 @@
 
 2. Baixe o app **Expo Go** no seu celular
 
-3. Acesse a pasta do aplicatico com seu prompt de comando e rode o comando **npm install**
+3. Acesse a pasta do aplicativo no seu prompt de comando
 
-4. Rode o comando **npm start**
+4. Acesse a pasta do aplicatico com seu prompt de comando e rode o comando **npm install**
 
-5. Leia o QR Code no app e veja o aplicativo funcionando no seu celular
+5. Rode o comando **npm start**
+
+6. Leia o QR Code no app e veja o aplicativo funcionando no seu celular
 
 ## Recomendações React Native
 
