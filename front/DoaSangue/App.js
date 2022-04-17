@@ -20,14 +20,17 @@ function App() {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen
-            name="Home"
-            component={HomeScreen}
-            options={{ title: 'Welcome' }}
-          />
-          <Stack.Screen
             name="LoginScreen"
             component={LoginScreen}
-            options={{ title: 'Log in' }}
+            options={{
+              title: 'Log in',
+              headerShown: false
+            }}
+          />
+          <Stack.Screen
+            name="HomeScreen"
+            component={HomeScreen}
+            options={{ title: 'Welcome' }}
           />
         </Stack.Navigator>
       </NavigationContainer>

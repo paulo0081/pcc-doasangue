@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-
 import { TextInput } from 'react-native-paper';
-
 import { Provider as PaperProvider } from "react-native-paper";
+
+import {colors} from '../style/colors';
 
 export default function SmallTextInput(props) {
 	return (
@@ -14,12 +14,10 @@ export default function SmallTextInput(props) {
 				// style={styles.input}
 				secureTextEntry={props.isPassword}
 				mode='outlined'
-				activeOutlineColor='#f0d'
+				activeOutlineColor={!props.invalidInput ? colors.blue : colors.lightRed}
+				outlineColor={!props.invalidInput ? colors.gray : colors.red}
+				style={props.style}
 			/>
 		</View>
 	);
 }
-
-const styles = StyleSheet.create({
-	input: {},
-});
