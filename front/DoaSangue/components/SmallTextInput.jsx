@@ -10,6 +10,7 @@ export default function SmallTextInput(props) {
 		<View >
 			<TextInput
 				label={props.label}
+				value={props.value}
 				onChangeText={text =>props.updateVar(text)}
 				// style={styles.input}
 				secureTextEntry={props.isPassword}

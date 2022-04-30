@@ -6,6 +6,8 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 
 import HomeScreen from './pages/HomeScreen';
 import LoginScreen from './pages/LoginScreen';
+import RegistrationScreen from './pages/RegistrationScreen';
+import PasswordSendEmail from './pages/PasswordSendEmail';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,13 +26,33 @@ function App() {
             component={LoginScreen}
             options={{
               title: 'Log in',
-              headerShown: false
+              headerShown: false,
             }}
+            initialParams={{ checkedReaseon: false }}
           />
           <Stack.Screen
             name="HomeScreen"
             component={HomeScreen}
-            options={{ title: 'Welcome' }}
+            options={{
+              title: 'Welcome',
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="RegistrationScreen"
+            component={RegistrationScreen}
+            options={{
+              title: 'Criar conta',
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="PasswordSendEmail"
+            component={PasswordSendEmail}
+            options={{
+              title: 'Criar conta',
+              headerShown: false,
+            }}
           />
         </Stack.Navigator>
       </NavigationContainer>
