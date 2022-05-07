@@ -5,13 +5,11 @@
 */
 
 const { MongoClient } = require("mongodb");
-const { header } = require("../functions/apiFunctions");
+const { connectDB, header } = require("../functions/apiFunctions");
 
 module.exports = async function (context, req) {
-    const client = new MongoClient('mongodb+srv://adm:adm@mousse.ed5s0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useUnifiedTopology: true });
-	await client.connect();
-	const database = client.db("MousseDB");
-	const donerCollection = database.collection("Doner");
+    const collections = await connectDB(['Doner']);
+    const donerCollection = collections[0];
 
     // Save each variable to create a new user
     const email = req.body.email;
