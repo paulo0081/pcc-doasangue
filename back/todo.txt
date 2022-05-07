@@ -3,13 +3,13 @@ Done
     - Get √
     - Put √
     - Delete √
-    - Options √
+    - Options √√√
 Corp
     - Post √
     - Get √
-    - Put
-    - Delete
-    - Options
+    - Put √
+    - Delete √
+    - Options √√√
 Campaign
     - Post
     - Get
