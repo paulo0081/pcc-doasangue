@@ -5,8 +5,8 @@ Done
     - Delete √
     - Options √
 Corp
-    - Post
-    - Get
+    - Post √
+    - Get √
     - Put
     - Delete
     - Options

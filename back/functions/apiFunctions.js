@@ -1,3 +1,21 @@
+const { MongoClient } = require("mongodb");
+const { config } = require('../functions/config');
+
+async function connectDB(collection_names) {
+  /*
+    Connect to the database
+  */
+    const client = new MongoClient(config['conn'], { useUnifiedTopology: true });
+    await client.connect();
+    const database = client.db(config['db']);
+    const collections = []
+    for (let i = 0; i < collection_names.length; i++) {
+      collections.push(database.collection(collection_names[i]));
+    }
+
+    return collections;
+}
+
 const header = {
   'Access-Control-Allow-Credentials': 'false',
   'Access-Control-Allow-Origin': '*',
@@ -26,4 +44,4 @@ function UpdateUser(list, email, pass, validated) {
   return list;
 }
 
-module.exports = { UpdateUser, header };
+module.exports = { connectDB, UpdateUser, header };
