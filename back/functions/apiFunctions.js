@@ -97,4 +97,88 @@ function UpdateCorp(corp, cnpj, pass, name, country, city, address, phone, email
   return corp;
 }
 
-module.exports = { connectDB, UpdateUser, UpdateCorp, header };
+function UpdateCampaign(foundDoc, cnpj, start_date, end_date, country, state, city, address, phone, creation_date, num_doners, campaign_rating, observation, header_color, banner_link) {
+  if (cnpj !== undefined) {
+    foundDoc.cnpj = cnpj;
+  }
+
+  if (start_date !== undefined) {
+    foundDoc.start_date = start_date;
+  }
+
+  if (end_date !== undefined) {
+    foundDoc.end_date = end_date;
+  }
+
+  if (country !== undefined) {
+    foundDoc.country = country;
+  }
+
+  if (state !== undefined) {
+    foundDoc.state = state;
+  }
+
+  if (city !== undefined) {
+    foundDoc.city = city;
+  }
+
+  if (address !== undefined) {
+    foundDoc.address = address;
+  }
+
+  if (phone !== undefined) {
+    foundDoc.phone = phone;
+  }
+
+  if (creation_date !== undefined) {
+    foundDoc.creation_date = creation_date;
+  }
+
+  if (num_doners !== undefined) {
+    foundDoc.num_doners = num_doners;
+  }
+
+  if (campaign_rating !== undefined) {
+    foundDoc.campaign_rating = campaign_rating;
+  }
+
+  if (observation !== undefined) {
+    foundDoc.observation = observation;
+  }
+
+  if (header_color !== undefined) {
+    foundDoc.header_color = header_color;
+  }
+
+  if (banner_link !== undefined) {
+    foundDoc.banner_link = banner_link;
+  }
+
+  return foundDoc;
+}
+
+function UpdateDonationDate(res, doner_email, corp_cnpj, campaign_code, ammount_date, donation_date) {
+  if (doner_email !== undefined) {
+    res.doner_email = doner_email;
+  }
+
+  if (corp_cnpj !== undefined) {
+    res.corp_cnpj = corp_cnpj;
+  }
+
+  if (campaign_code !== undefined) {
+    res.campaign_code = campaign_code;
+  }
+
+  if (ammount_date !== undefined) {
+    res.ammount_date = ammount_date;
+  }
+
+  if (donation_date !== undefined) {
+    res.donation_date = donation_date;
+  }
+
+  return res;
+}
+
+module.exports = { connectDB, UpdateUser, UpdateCorp, UpdateCampaign, UpdateDonationDate, header };

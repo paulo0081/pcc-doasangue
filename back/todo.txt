@@ -1,27 +1,27 @@
-Done
+√ Done
     - Post √
     - Get √
     - Put √
     - Delete √
     - Options √√√
-Corp
+√ Corp
     - Post √
     - Get √
     - Put √
     - Delete √
     - Options √√√
-Campaign
+√ Campaign
     - Post √
-    - Get
-    - Put
-    - Delete
-    - Options
-Donation_Date
-    - Post
-    - Get
-    - Put
-    - Delete
-    - Options
+    - Get √
+    - Put √
+    - Delete √
+    - Options √√√
+√ Donation_Date
+    - Post √
+    - Get √
+    - Put √
+    - Delete √
+    - Options √√√
 Achievement
     - Post
     - Get

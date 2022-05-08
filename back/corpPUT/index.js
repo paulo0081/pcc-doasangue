@@ -23,7 +23,7 @@ module.exports = async function (context, req) {
     let corp = await res.toArray();
     corp = corp[0];
     corp = UpdateCorp(corp, cnpj, pass, name, country, city, address, phone, email, state, entry_date, subscription_type, subscription_start, subscription_end);
-
+    // 6277c41632b4f7308bb02d55
     corpCollection.updateOne(
         {"cnpj": cnpj},
         {$set: corp}
