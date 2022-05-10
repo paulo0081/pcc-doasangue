@@ -8,6 +8,8 @@ import HomeScreen from './pages/HomeScreen';
 import LoginScreen from './pages/LoginScreen';
 import RegistrationScreen from './pages/RegistrationScreen';
 import PasswordSendEmail from './pages/PasswordSendEmail';
+import CampaignScreen from './pages/CampaignScreen';
+import MapScreen from './pages/MapScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -51,6 +53,23 @@ function App() {
             component={PasswordSendEmail}
             options={{
               title: 'Criar conta',
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="CampaignScreen"
+            component={CampaignScreen}
+            options={{
+              title: 'Campanhas',
+              headerShown: false,
+            }}
+            
+          />
+          <Stack.Screen
+            name="MapScreen"
+            component={MapScreen}
+            options={{
+              title: 'Mapa',
               headerShown: false,
             }}
           />

@@ -19,8 +19,8 @@ export default function LoginScreen({ navigation, route }) {
 	const onDismissSnackBar = () => setVisible(false);
 
 	user = {
-		email: 'email@mousse.com',
-		pass: 'pass123',
+		email: '1',
+		pass: '1',
 	}
 
 	function reasonCheck() {
@@ -37,7 +37,7 @@ export default function LoginScreen({ navigation, route }) {
 
 	function validateUser() {
 		if (nameMain == user.email && passMain == user.pass) {
-			navigation.navigate('HomeScreen', { name: 'Mousse' });
+			navigation.navigate('HomeScreen', {});
 		} else { // Login invalidated
 			setPassWrong(true);
 		}
